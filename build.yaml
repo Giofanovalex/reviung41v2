@@ -1,4 +1,4 @@
 # This file defaults to the board and shield defined in the `build.yaml`
 include:
-  - board: nice_nano_v2
+  - board: nrfmicro_13
     shield: reviung41
