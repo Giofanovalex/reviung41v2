@@ -1,5 +1,6 @@
 manifest:
   remotes:
+    # Adding a comment to invalidate cache
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
   projects:
