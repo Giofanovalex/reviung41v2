@@ -39,13 +39,13 @@ jobs:
         run: west zephyr-export
 
       - name: West Build (Reviung41)
-        run: west build -s zmk/app -b nrfmicro_13 -- -DSHIELD=reviung41 -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=reviung41 -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 reviung41_nrfmicro_13-zmk.uf2
+        run: cp build/zephyr/zmk.uf2 reviung41_nice_nano_v2-zmk.uf2
 
       - name: Archive (Reviung41)
         uses: actions/upload-artifact@v4
         with:
           name: firmware
-          path: reviung41_nrfmicro_13-zmk.uf2
+          path: reviung41_nice_nano_v2-zmk.uf2
